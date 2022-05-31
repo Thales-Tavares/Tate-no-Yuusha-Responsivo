@@ -1,0 +1,192 @@
+body{
+    margin:0; /*tamanho da margem*/
+    padding:0; /*tamanho da margem interna (acolchoamento)*/
+    font: 85% arial; /* tamanho e estilo da fonte*/
+    text-align: center; /*alinhamento do texto*/
+    color: #333; /*Cor do texto*/
+    background: #ddd url(../Imagens/escudo1.jpg) repeat 0 0;/*cor de fundo, ancoragem de imagem e repetindo a imagem*/
+}
+a:link{ color: #B52C07; }/*cor no link*/
+
+a:visited { color: #b93411; }/*cor no link quando clicado*/
+
+a:focus { color: #000; }
+
+a:hover { color: #7d8206; }/*cor do link quando passa o mouse em cima*/
+
+a:active { color: red; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0 0 .5em; }
+
+h2{
+    color: #B52C07;
+    font: 140% "times new roman";
+}
+
+h2 a{
+    text-decoration: none;/*tirar a formatação do h2*/
+}
+
+h3{
+    color: #7d8206;
+}
+
+#container{
+    margin: 1em auto;
+    width: 900px;/*delimitando o tamanho horizontal do container*/
+    text-align: left;
+    background: #fff;
+    border: 1px solid #676767;/*adicionando borda no container*/
+}
+#header{ 
+    height: 100px;/*delimitando a altura do cabeçálho*/
+    width: 100%;
+    position: relative;/*define onde o elemento estará posicionado e qual o valor dele*/
+    background-image:  url(../Imagens/fundoheader1.jpg);/*adicionando imagem ao cabeçálho*/
+    background-repeat: no-repeat;/*configurando para não repetir a imagem*/
+    background-attachment: fixed;/*configurando a interação com a página. Ex: rolando junto ou fixo*/
+    background-size: 100%; /*ajustando tamanho da imagem*/
+    border-bottom: 1px solid #fff; /*colocando borda inferior*/
+}
+
+#header h1{
+    position: absolute;
+    left: 250px;/*Define a borda esquerda de um elemento*/
+    padding-top: 30px;
+    text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F, 0 0 0.2em #87F;/*Colocando sombreamento e efeito neon na letra*/
+    color: #fff;
+}
+
+#menunav{
+    background: #9FA41D;/*cor ao fundo do menu de navegação*/
+    color: #272900;/*cor da letra do menu de nav*/
+    padding: 2px 0;
+    margin-bottom: 22px;
+}
+
+#menunav ul{
+    margin: 0 0 0 20px;
+    padding: 0;
+    list-style-type: none;/*tirando os pontos da lista*/
+    border-left: 1px solid #c4c769;/*adicionando borda esquerda*/
+}
+
+#menunav li{
+    display: inline;/*alinhando a lista para horizontal*/
+    padding: 0 20px;
+    border-right: 1px solid #c4c769;/*borda direita*/
+}
+
+#menunav li a{
+    text-decoration: none;
+    color: #272900;
+}
+
+#menunav li a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #272900;
+}
+
+#menu{
+    float: right;/*alinhando o menu de informações á direita*/
+    width: 300px;
+    border-left: 1px solid #c5c877;
+    padding-left: 15px;
+}
+
+#menu ul{
+    margin: 1em 0;
+    padding: 0;
+}
+
+#menu ul li{
+    margin: 0 0 1em;
+    padding: 0;
+    list-style-type: none;
+}
+
+#conteudo{
+    float: left;/*alinhando o conteúdo á esquerda*/
+    width: 540px;
+    margin: 0 0 0 20px;
+}
+
+#conteudo p{
+    line-height: 165%;/*ajustando o espaçamento da linha*/
+}
+
+.texto{
+    border-bottom: 1px solid #c5c877;
+}
+
+#conteudo ul{
+    text-align: right;/*alinhando a lista á direita*/
+    margin: 1em 0;
+    padding: 0;
+    font-size: 95%;
+}
+
+#conteudo li{
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 0 0 0 7px;
+}
+
+.imagefloat{
+    float: right;
+    padding: 2px;
+    border: 1px solid #9FA41D;
+    margin: 0 0 10px 10px;
+}
+
+#footer{
+    clear: both;/*comando para deixar o elemento flutuante e não alterar o site e se adequar*/
+    color: #272900;
+    text-align: right;
+    font-size: 90%;
+    background: #9FA41D;
+    padding: 5px;
+}
+
+@media (max-width:400px) {/*Para mudar o tamanho da página caso seja mobile, dentro dessa sintaxe, colocar tudo o que vai mudar.*/
+    #container{
+        width: 100%;
+    }
+    #header{
+        width: 100%;
+    }
+    #header h1{
+        left: 20px;
+        
+    }
+    #menunav{
+        width: 100%;
+    }
+    #menunav ul{
+        margin: 0 0 0 10px;
+    }
+    #conteudo{
+        width: 92%;
+        margin: 0 20px 0 20px;
+    }
+    #menu{
+        float: none;
+        width: 92%;
+        border-left: 5px solid #c5c877;
+        padding-left: 5px;
+        margin-left:10px;
+    }
+    #footer{
+        text-align: center;
+    }
+    #conteudo ul{
+        text-align: center;
+    }
+    #conteudo li{
+        padding: 0 10px 0 10px;
+    }
+}
+
+

@@ -1,0 +1,190 @@
+body{
+    margin:0;
+    padding:0;
+    font: 85% arial;
+    text-align: center;
+    color: #333;
+    background: #ddd url(../Imagens/escudo1.jpg) repeat 0 0;
+}
+a:link{ color: #B52C07; }
+
+a:visited { color: #b93411; }
+
+a:focus { color: #000; }
+
+a:hover { color: #7d8206; }
+
+a:active { color: red; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0 0 .5em; }
+
+h2{
+    color: #B52C07;
+    font: 140% "times new roman";
+}
+
+h2 a{
+    text-decoration: none;
+}
+
+h3{
+    color: #7d8206;
+}
+
+#container{
+    margin: 1em auto;
+    width: 900px;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #676767;
+}
+#header{ 
+    height: 100px;
+    width: 100%;
+    position: relative;
+    background-image: url(../Imagens/fundoheader1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+#header h1{
+    position: absolute;
+    left: 250px;
+    padding-top: 30px;
+    text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F, 0 0 0.2em #87F;
+    color: #fff;
+}
+
+#menunav{
+    background: #9FA41D;
+    color: #272900;
+    padding: 2px 0;
+    margin-bottom: 22px;
+}
+
+#menunav ul{
+    margin: 0 0 0 20px;
+    padding: 0;
+    list-style-type: none;
+    border-left: 1px solid #c4c769;
+}
+
+#menunav li{
+    display: inline;
+    padding: 0 20px;
+    border-right: 1px solid #c4c769;
+}
+
+#menunav li a{
+    text-decoration: none;
+    color: #272900;
+}
+
+#menunav li a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #272900;
+}
+
+#menu{
+    float: right;
+    width: 300px;
+    border-left: 1px solid #c5c877;
+    padding-left: 15px;
+}
+
+#menu ul{
+    margin: 1em 0;
+    padding: 0;
+}
+
+#menu ul li{
+    margin: 0 0 1em;
+    padding: 0;
+    list-style-type: none;
+}
+
+#conteudo{
+    float: left;
+    width: 540px;
+    margin: 0 0 0 20px;
+}
+
+#conteudo p{
+    line-height: 165%;
+}
+
+.texto{
+    border-bottom: 1px solid #c5c877;
+}
+
+#conteudo ul{
+    text-align: right;
+    margin: 1em 0;
+    padding: 0;
+    font-size: 95%;
+}
+
+#conteudo li{
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 0 0 0 7px;
+}
+
+.imagefloat{
+    float: right;
+    padding: 2px;
+    border: 1px solid #9FA41D;
+    margin: 0 0 10px 10px;
+}
+
+#footer{
+    clear: both;
+    color: #272900;
+    text-align: right;
+    font-size: 90%;
+    background: #9FA41D;
+    padding: 5px;
+}
+
+@media (max-width:400px) {/*Para mudar o tamanho da página caso seja mobile, dentro dessa sintaxe, colocar tudo o que vai mudar.*/
+    #container{
+        width: 100%;
+    }
+    #header{
+        width: 100%;
+    }
+    #header h1{
+        left: 20px;
+        
+    }
+    #menunav{
+        width: 100%;
+    }
+    #menunav ul{
+        margin: 0 0 0 10px;
+    }
+    #conteudo{
+        width: 92%;
+        margin: 0 20px 0 20px;
+    }
+    #menu{
+        float: none;
+        width: 92%;
+        border-left: 5px solid #c5c877;
+        padding-left: 5px;
+        margin-left:10px;
+    }
+    #footer{
+        text-align: center;
+    }
+    #conteudo ul{
+        text-align: center;
+    }
+    #conteudo li{
+        padding: 0 10px 0 10px;
+    }
+}
